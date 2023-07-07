@@ -1,0 +1,29 @@
+{
+  "name": "Leetcode format",
+  "version": "1.0",
+  "manifest_version": 3,
+  "description": "Formats C++ Code for Leetcode Judge",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "content_scripts": [
+    {
+      "js": ["content.js"],
+      "matches": [
+        "https://learning.algozenith.com/*",
+        "https://*.algozenith.com/*"
+      ]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["beautify.js", "script.js"],
+      "matches": [
+        "https://learning.algozenith.com/*",
+        "https://*.algozenith.com/*"
+      ]
+    }
+  ]
+}
